@@ -1,0 +1,287 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #140021;
+}
+
+.intro-section {
+    width: 100%;
+    height: 745px;
+    position: relative;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    margin-right: 50px;
+    width: 500px;
+    float: right;
+}
+
+.intro-back {
+    background-image: url('/images/layered-steps-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: back 2s ease-in-out 0s 1 normal forwards;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    fill-opacity: 0;
+}
+
+@keyframes back {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.intro-back-reverse {
+    background-image: url('/images/layered-steps-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: tae 0.5s ease-in-out 0s 1 normal forwards;
+    text-align: right;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+@keyframes tae {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.intro-new {
+    background-image: url('/images/layered-steps-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: newintro 0.5s ease-in-out 0s 1 normal forwards;
+    text-align: right;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+@keyframes newintro {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-350px);
+    }
+}
+
+h1.intro-title {
+    font-size: 130px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: text 2s ease 0s 1 normal forwards;
+    opacity: 1;
+    margin-top: 1.2em;
+    margin-bottom: 0px;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+p.intro-description {
+    font-family: 'Roboto Mono', monospace;
+    color: gainsboro;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-right: 30px;
+    animation: text 2s ease 0s 1 normal forwards;
+    width: 600px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+p.next-page-a {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(208, 207, 207);
+    border: 2px gainsboro solid;
+    margin-right: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    animation: text 2s ease 0s 1 normal forwards;
+}
+
+p.next-page-a.a {
+    text-decoration: none;
+    border: 2px gainsboro solid;
+}
+
+a.main-link {
+    text-decoration: none;
+    color: rgb(208, 207, 207);
+    text-align: center;
+}
+
+.info-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-back {
+    background-image: url('/images/stacked-peaks-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    fill-opacity: 0;
+    animation: info 0.6s ease 0s 1 normal forwards;
+}
+
+@keyframes info {
+    0% {
+        opacity: 0;
+        transform: translateY(800px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes info-reverse {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(800px);
+    }
+}
+
+.animation-infoback {
+    animation: info 0.6s ease 0s 1 normal forwards;
+    background-image: url('/images/stacked-peaks-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    fill-opacity: 0;
+}
+
+.animation-infoback-reverse {
+    animation: info-reverse 0.6s ease 0s 1 normal forwards;
+    background-image: url('/images/stacked-peaks-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    fill-opacity: 0;
+}
+
+.flexbox-container {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.card-container {
+    width: 250px;
+    height: 250px;
+    background-color: #210335;
+    border-radius: 17px;
+    padding: 30px 35px 25px 35px;
+    margin: 30px 30px 30px 30px;
+    transition: transform 0.5s;
+}
+
+.card-container:hover {
+    border: 1px rgba(237, 110, 20, 0.918) solid;
+    box-shadow: 1px -1px 33px 0px rgba(237, 112, 20, 0.9);
+    -webkit-box-shadow: 1px -1px 33px 0px rgba(237, 112, 20, 0.9);
+    -moz-box-shadow: 1px -1px 33px 0px rgba(237, 112, 20, 0.9);
+    transform: scale(1.1);
+}
+
+img.face {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+h2.name-title {
+    font-family: 'Roboto Mono', monospace;
+    color: #F6770F;
+    margin-bottom: 0;
+}
+
+h3.name-holder {
+    font-family: 'Roboto Mono', monospace;
+    color: gainsboro;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+p.description-para {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(231, 231, 231);
+    font-weight: 400;
+}
+
