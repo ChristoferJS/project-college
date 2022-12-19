@@ -1,15 +1,10 @@
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        const square = entry.target.querySelector('.intro-back');
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+};
 
-        if (entry.isIntersecting) {
-            square.classList.add('intro-new');
-            return; // if we added the class, exit the function
-        }
+const body = document.querySelector('html');
 
-        // We're not intersecting, so remove the class!
-        square.classList.remove('intro-back-reverse');
-    });
-});
+setTimeout(function () {
+    body.classList.add('makeitscroll');
+}, 3000);
 
-observer.observe(document.querySelector('.intro-section'));                                 [                                                                                                                                                                                                                                                                                                                                                                                            p8-     cccccccccccccccccccccccccccccccccccccccccccccccccccbvg]
