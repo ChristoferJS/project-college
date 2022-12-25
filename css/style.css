@@ -24,7 +24,7 @@ body {
 }
 
 .intro-back {
-    background-image: url('../images/steps1.png');
+    background-image: url('../images/layered-steps-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -33,6 +33,19 @@ body {
     width: 100%;
     z-index: 0;
     fill-opacity: 0;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-300px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 h1.intro-title {
@@ -118,7 +131,7 @@ a.main-link {
 }
 
 .info-back {
-    background-image: url('../images/peaks1.png');
+    background-image: url('../images/stacked-peaks-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -154,6 +167,10 @@ a.main-link {
     transition: transform 0.5s;
 }
 
+a {
+    text-decoration: none;
+}
+
 .card-container:hover {
     border: 1px rgba(237, 110, 20, 0.918) solid;
     box-shadow: 1px -1px 33px 0px rgba(237, 112, 20, 0.9);
@@ -169,6 +186,8 @@ img.face {
     border-style: solid;
     border-color: #D7433B;
 }
+
+
 
 h2.name-title {
     font-family: 'Roboto Mono', monospace;
@@ -188,6 +207,7 @@ p.description-para {
     font-family: 'Roboto Mono', monospace;
     color: rgb(231, 231, 231);
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 p.open {
